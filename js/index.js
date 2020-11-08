@@ -40,3 +40,91 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let allNav = document.querySelectorAll ('nav a');
+
+var linkOne = document. querySelector  ('nav > a:nth-child(1)');
+var linkTwo = document. querySelector  ('nav > a:nth-child(2)');
+var linkThree = document. querySelector  ('nav > a:nth-child(3)');
+var linkFour = document. querySelector  ('nav > a:nth-child(4)');
+var linkFive = document. querySelector  ('nav > a:nth-child(5)');
+var linkSix = document. querySelector  ('nav > a:nth-child(6)');
+
+linkOne.textContent = siteContent ['nav'] ['nav-item-1'];
+linkTwo.textContent = siteContent ['nav'] ['nav-item-2'];
+linkThree.textContent = siteContent ['nav'] ['nav-item-3'];
+linkFour.textContent = siteContent ['nav'] ['nav-item-4'];
+linkFive.textContent = siteContent ['nav'] ['nav-item-5'];
+linkSix.textContent = siteContent ['nav'] ['nav-item-6'];
+
+
+allNav. forEach((a) => {a.style.color = 'green';});
+
+const newLink = document.createElement ("button");
+newLink.textContent= "New Feature";
+
+const linkSeven = document. querySelector('nav');
+linkSeven.prepend(newLink);
+
+var H1cta = document.querySelector("section.cta > div > h1");
+var BtnCta = document.querySelector("section.cta > div > button");
+
+H1cta.textContent = siteContent ["cta"]["h1"];
+BtnCta.textContent = siteContent ["cta"]["button"];
+
+let imgCta = document.getElementById("cta-img");
+imgCta.setAttribute("src", siteContent["cta"]["img-src"]);
+
+const newButton = document.createElement ("button");
+newButton.textContent = "New Button";
+
+const secondBtn = document. querySelector("section.cta > div");
+secondBtn.appendChild(newButton);
+
+
+
+var features = document. querySelector ('div.top-content > div:nth-child(1) > h4');
+var featuresTxt = document. querySelector ('div.top-content > div:nth-child(1) > p');
+
+var about = document. querySelector ('div.top-content > div:nth-child(2) > h4');
+var aboutTxt = document. querySelector ('div.top-content > div:nth-child(2) > p');
+
+features.textContent = siteContent["main-content"] ["features-h4"];
+featuresTxt. textContent = siteContent ["main-content"] ["features-content"];
+about.textContent = siteContent["main-content"] ["about-h4"];
+aboutTxt. textContent = siteContent ["main-content"] ["about-content"];
+
+
+var imgMid = document.getElementById("middle-img");
+imgMid.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+var services = document.querySelector("div.bottom-content > div:nth-child(1) > h4");
+var servicesTxt = document.querySelector("div.bottom-content > div:nth-child(1) > p");
+var product = document.querySelector("div.bottom-content > div:nth-child(2) > h4");
+var productTxt = document.querySelector("div.bottom-content > div:nth-child(2) > p");
+var vision = document.querySelector("div.bottom-content > div:nth-child(3) > h4");
+var visionTxt = document.querySelector("div.bottom-content > div:nth-child(3) > p");
+
+services.textContent = siteContent ["main-content"] ["services-h4"];
+servicesTxt.textContent = siteContent ["main-content"] ["services-content"];
+product.textContent = siteContent ["main-content"] ["product-h4"];
+productTxt.textContent = siteContent ["main-content"] ["product-content"];
+vision.textContent = siteContent ["main-content"] ["vision-h4"];
+visionTxt.textContent = siteContent ["main-content"] ["vision-content"];
+
+var contactHeader = document.querySelector("section.conatct > h4");
+var contactAdresss = document.querySelector("section.conatct > p:nth-child(2)");
+var contactNumber = document.querySelector("section.conatct > p:nth-child(3)");
+var contactEmail = document.querySelector("section.conatct > p:nth-child(4)");
+
+
+contactHeader.textContent = siteContent ["contact"]["contact-h4"];
+contactAdresss.textContent = siteContent ["contact"]["address"];
+contactNumber.textContent = siteContent ["contact"] ["phone"];
+contactEmail. textContent = siteContent ["contact"] ["email"];
+
+var footerNew = document.querySelector("footer > p");
+
+footerNew.textContent = siteContent["footer"]["copyright"];
+
+
